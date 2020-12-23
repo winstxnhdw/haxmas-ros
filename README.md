@@ -42,7 +42,7 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
 2. Git clone this repository
    - Open your terminal
    - Go to the directory you wish to clone the repository in
-   - Type `git clone https://github.com/winstxnhdw/haxmas_ros.git`
+   - Type `git clone https://github.com/winstxnhdw/haxmas-ros.git`
    
 3. Change directory to your cloned path
    - Go to your terminal
