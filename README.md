@@ -36,6 +36,26 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
    
 3. [Git](https://git-scm.com/download/linux)
 
+## Installation
+1. Install [Ubuntu 16.04.6 LTS (Xenial Xerus) or higher](http://releases.ubuntu.com/16.04/)
+
+2. Git clone this repository
+   - Open your terminal
+   - Go to the directory you wish to clone the repository in
+   - Type `git clone https://github.com/winstxnhdw/haxmas_ros.git`
+   
+3. Change directory to your cloned path
+   - Go to your terminal
+   - Type `cd <workspace>/src/haxmas-ros`
+   
+4. Install [Desktop-Full ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+   - Type `chmod +x ros-kinetic-desktop-full-install.sh`
+   - Type `./ros-kinetic-desktop-full-install.sh` to install Desktop-Full ROS Kinetic
+  
+5. Install the required packages
+   - Type `chmod +x requirements.sh`
+   - Type `./requirements.sh` 
+
 ## Quick Start
 Launch santa.launch
  - Launch your terminal
