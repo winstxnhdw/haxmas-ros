@@ -4,6 +4,16 @@
 ## Abstract
 HaXmas@EIG is a half-day hackathon, where teams develop a product under the theme of "Innovative Ways to Celebrate Christmas". The final product is a combination of a Telegram bot, AWS and ROS. This package contains the ROS component, which is responsible for interfacing with the relevant functions on the Raspberry Pi.
 
+## Table of Contents
+- [Abstract](#Abstract)
+- [Relevant Packages](#Relevant-Packages)
+- [Requirements](#Requirements)
+  - [Hardware](#Hardware)
+  - [Operating System](#Operating-System)
+  - [Software](#Software)
+  - [Quick Start](#Quick-Start)
+
+
 ## Relevant Packages
 - [ROS Bridge](https://github.com/khayliang/haxmas-bridge)
 
@@ -25,3 +35,9 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
    - [gpiozero](https://gpiozero.readthedocs.io/en/stable/installing.html)
    
 3. [Git](https://git-scm.com/download/linux)
+
+## Quick Start
+Launch santa.launch
+ - Launch your terminal
+ - Type `catkin_make`
+ - Type `roslaunch santa_ros santa.launch`
