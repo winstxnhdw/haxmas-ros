@@ -11,7 +11,7 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
   - [Hardware](#Hardware)
   - [Operating System](#Operating-System)
   - [Software](#Software)
-  - [Quick Start](#Quick-Start)
+- [Quick Start](#Quick-Start)
 
 
 ## Relevant Packages
