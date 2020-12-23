@@ -57,7 +57,6 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
    - Type `./requirements.sh` 
 
 ## Quick Start
-- Launch santa.launch
-  - Launch your terminal
-  - Type `catkin_make`
-  - Type `roslaunch santa_ros santa.launch`
+1. Launch your terminal
+2. Type `catkin_make`
+3. Type `roslaunch santa_ros santa.launch`
