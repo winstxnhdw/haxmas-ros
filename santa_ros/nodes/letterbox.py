@@ -18,21 +18,22 @@ class Receiver:
     def letter_cb(self, msg):
         
         def eventHandle(reply, sentiment):
-            flash_switch = {
-                0: flash_green(),
-                1: flash_orange(),
-                2: flash_all(),
-                3: flash_red()
-            }
-            flash_switch.get(sentiment)
-            
-            audio_switch = {
-                0: speak(reply, 'good'),
-                1: speak(reply, 'neutral'),
-                2: speak(reply, 'mixed'),
-                3: speak(reply, 'bad')
-            }
-            audio_switch.get(sentiment)
+
+            if sentiment == 0:
+                flash_green()
+                speak(reply, 'good')
+
+            elif sentiment == 1:
+                flash_orange()
+                speak(reply, 'neutral')
+
+            elif sentiment == 2:
+                flash_all()
+                speak(reply, 'mixed')
+
+            elif sentiment == 3:
+                flash_red()
+                speak(reply, 'bad')
 
         eventHandle(msg.reply, msg.sentiment)
 
