@@ -14,8 +14,5 @@ sudo apt-get install git -y
 
 # pip installs
 pip install --upgrade pip
-pip install numpy
-pip install pandas
-
-# git clones
-git clone 
+pip install playsound
+pip install gpiozero

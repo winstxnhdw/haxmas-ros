@@ -1,4 +1,5 @@
 <launch>
-	<param name="path" type="string" value="$(find santa_ros)/debug.json" />
+	<param name="PATH/JSON" type="string" value="$(find santa_ros)/debug.json" />
+	<param name="PATH/AUDIO" type="string" value="$(find santa_ros)/../audio" />
 	<node name="letterbox" pkg="santa_ros" type="letterbox.py" />
 </launch>

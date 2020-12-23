@@ -12,7 +12,7 @@ class Publisher:
         self.message_pub = rospy.Publisher('/message', Elves, queue_size=10)
 
         try:
-            self.message_path_params = rospy.get_param("/path")
+            self.message_path_params = rospy.get_param("/PATH/JSON")
             self.message_path = self.message_path_params
 
         except:
