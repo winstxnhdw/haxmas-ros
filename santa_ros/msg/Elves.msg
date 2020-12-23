@@ -1,2 +1,2 @@
-string reply
-int8 sentiment
+int32 reply
+int32 sentiment

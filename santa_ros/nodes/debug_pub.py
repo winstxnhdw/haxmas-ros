@@ -28,7 +28,7 @@ class Publisher:
 
         letter = Elves()
         
-        letter.reply = self.reply
+        letter.reply = int(self.reply)
         letter.sentiment = int(self.sentiment)
 
         self.message_pub.publish(letter)
