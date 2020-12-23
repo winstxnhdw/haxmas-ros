@@ -1,0 +1,5 @@
+<launch>
+	<param name="path" type="string" value="$(find santa_ros)/debug.json" />
+	<node name="letterbox" pkg="santa_ros" type="letterbox.py" />
+	<!--<node name="debug_publisher" pkg="santa_ros" type="debug_pub.py" />-->
+</launch>

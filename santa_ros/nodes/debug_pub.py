@@ -3,20 +3,35 @@
 import rospy
 import json
 
-from std_msgs.msg import String
+from santa_ros.msg import Elves
 
 class Publisher:
 
     def __init__(self):
 
-        self.message_pub = rospy.Publisher('/message', String, queue_size=10)
+        self.message_pub = rospy.Publisher('/message', Elves, queue_size=10)
 
-        with open("../../debug.json", "r") as read_file:
+        try:
+            self.message_path_params = rospy.get_param("/path")
+            self.message_path = self.message_path_params
+
+        except:
+            raise Exception("Missing ROS parameters. Check the launch file.")
+
+        with open(self.message_path, "r") as read_file:
             debug_dict = json.load(read_file)
 
         self.reply = debug_dict['reply']
         self.sentiment = debug_dict['sentiment']
-        self.audio_url = debug_dict['audio']
+
+    def publish_letter(self):
+
+        letter = Elves()
+        
+        letter.reply = self.reply
+        letter.sentiment = int(self.sentiment)
+
+        self.message_pub.publish(letter)
 
 def main():
 
@@ -25,6 +40,8 @@ def main():
     rospy.init_node('debug_publisher')
 
     try:
+        publisher.publish_letter()
+
         rospy.spin()
     
     except KeyboardInterrupt:
