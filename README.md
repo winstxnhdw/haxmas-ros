@@ -11,8 +11,8 @@ HaXmas@EIG is a half-day hackathon, where teams develop a product under the them
   - [Hardware](#Hardware)
   - [Operating System](#Operating-System)
   - [Software](#Software)
+- [Installation](#Installation)
 - [Quick Start](#Quick-Start)
-
 
 ## Relevant Packages
 - [ROS Bridge](https://github.com/khayliang/haxmas-bridge)
