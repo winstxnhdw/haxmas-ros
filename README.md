@@ -1,4 +1,4 @@
-# haxmas-ros 2020
+# haxmas-ros
 ![Block Diagram](https://github.com/winstxnhdw/haxmas-ros/blob/main/screenshots/block.PNG)
 
 ## Abstract
